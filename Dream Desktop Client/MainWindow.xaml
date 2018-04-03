@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dream_Desktop_Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Dream" Height="450" Width="800">
+    <ScrollViewer>
+        <TabControl Name="Tabs">
+            <TabItem Header="Home">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Name="spotlightGameImage" MouseUp="GameImage_MouseUp" Grid.Row="0" Grid.ColumnSpan="2" />
+                    <Image Name="discoverGame1Image" MouseUp="GameImage_MouseUp" Grid.Row="1" Grid.Column="0" />
+                    <Image Name="discoverGame2Image" MouseUp="GameImage_MouseUp" Grid.Row="1" Grid.Column="1" />
+                    <Image Name="discoverGame3Image" MouseUp="GameImage_MouseUp" Grid.Row="2" Grid.Column="0" />
+                    <Image Name="discoverGame4Image" MouseUp="GameImage_MouseUp" Grid.Row="2" Grid.Column="1" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Store">
+                <Grid Name="Store">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Name="store1Image" MouseUp="StoreImage_MouseUp" Grid.Row="0" Grid.Column="0" />
+                    <Image Name="store2Image" MouseUp="StoreImage_MouseUp" Grid.Row="0" Grid.Column="1" />
+                    <Image Name="store3Image" MouseUp="StoreImage_MouseUp" Grid.Row="0" Grid.Column="2" />
+                    <Image Name="store4Image" MouseUp="StoreImage_MouseUp" Grid.Row="1" Grid.Column="0" />
+                    <Image Name="store5Image" MouseUp="StoreImage_MouseUp" Grid.Row="1" Grid.Column="1" />
+                    <Image Name="store6Image" MouseUp="StoreImage_MouseUp" Grid.Row="1" Grid.Column="2" />
+                    <Image Name="store7Image" MouseUp="StoreImage_MouseUp" Grid.Row="2" Grid.Column="0" />
+                    <Image Name="store8Image" MouseUp="StoreImage_MouseUp" Grid.Row="2" Grid.Column="1" />
+                    <Image Name="store9Image" MouseUp="StoreImage_MouseUp" Grid.Row="2" Grid.Column="2" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Game"  Visibility="Collapsed">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Name="GameImage" Grid.Row="0" Grid.ColumnSpan="3"></Image>
+                    <TextBlock FontSize="40" Name="GameTitle" Grid.Row="1">Game Title</TextBlock>
+                    <TextBlock Name="GameDescription" Grid.Row="2" Grid.ColumnSpan="3">Description</TextBlock>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </ScrollViewer>
 </Window>
