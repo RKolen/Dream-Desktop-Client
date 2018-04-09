@@ -40,6 +40,6 @@ We also have created a Desktop Client that shows:
   - The store page 
   - The Game information
 
-These 2 clients are connected via a separate backend. One of the hardest task was to create a login system that would function with the seperate backend.
+These 2 clients are connected via a separate backend. One of the hardest tasks was to create a login system that would function with the seperate backend.
 
 In addition we have created 5 functional games.
